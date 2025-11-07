@@ -10,6 +10,8 @@
   --progress-bar-bg: rgba(27, 27, 27, 1);
   --color-card-bg: rgba(27, 27, 27, 1);
   --border-card: none;
+  --border-exp-card: 1px solid rgba(27, 27, 27, 0.25);
+  --color-text-exp: rgba(27, 27, 27, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,11 +27,13 @@
     --progress-bar-bg: rgba(22, 100, 234, 1);
     --color-card-bg: rgba(225, 225, 225, 1);
     --border-card: 1px solid rgba(232, 232, 232, 1);
+    --border-exp-card: 1px solid rgba(255, 255, 255, 0.25);
+    --color-text-exp: rgba(22, 100, 234, 1);
   }
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   margin: 0;
@@ -59,6 +63,8 @@ body {
   --progress-bar-bg: rgba(27, 27, 27, 1);
   --color-card-bg: rgba(27, 27, 27, 1);
   --border-card: none;
+  --border-exp-card: 1px solid rgba(27, 27, 27, 0.25);
+  --color-text-exp: rgba(27, 27, 27, 1);
 }
 
 .theme-checkbox {
@@ -277,14 +283,15 @@ body {
   line-height: 140%;
 }
 
-.skills__container {
+.container--alt {
   display: grid;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
-.skills__container--alt {
+.skills__container {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
@@ -444,4 +451,45 @@ body {
   background-size: cover;
   grid-column: span 2;
   grid-row: span 1;
+}
+
+.experience__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.exp-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: start;
+  background: transparent;
+  border: var(--border-exp-card);
+  border-radius: 10px;
+  text-align: start;
+  color: var(--color-text);
+  line-height: 140%;
+  height: 338px;
+  padding: 0 120px 0 0;
+}
+
+.exp-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 40px 0 0 40px;
+}
+
+.exp-card__text {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0 0 40px;
+}
+
+.exp-card__number {
+  font-size: 100px;
+  color: var(--color-text-exp);
+  margin: 0 0 63px 40px;
 }
