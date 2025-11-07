@@ -1,267 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John | Web Developer</title>
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-  <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John | Web Developer</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox">
 
-  <div class="page">
-    <header class="header">
-      <div class="container header__container">
-        <label for="theme-toggle" class="theme-toggle"><span class="theme-icon"></span>theme</label>
+    <div class="page">
+      <header class="header">
+        <div class="container header__container">
+          <label for="theme-toggle" class="theme-toggle"><span class="theme-icon"></span>theme</label>
 
-        <nav class="nav">
-          <ul class="nav__list">
-            <li><a href="#about" class="nav__link">About Me</a></li>
-            <li><a href="#skills" class="nav__link">Skills</a></li>
-            <li><a href="#projects" class="nav__link">Projects</a></li>
-            <li><a href="#experience" class="nav__link">Experience</a></li>
-          </ul>
-        </nav>
-
-        <button class="btn">contact</button>
-      </div>
-    </header>
-
-    <main>
-      <section id="about" class="about section">
-        <div class="container about__container">
-          <div class="about__text">
-            <h2 class="about__subtitle">about me</h2>
-            <h1 class="section__title">Hi, <span class="accent">I'm John</span>, a beginner web developer.</h1>
-            <p class="section__subtitle">Since 2025, I have been passionate about web technologies, studying at an IT college and studying all modern trends and directions of development of the web industry.</p>
-            <div class="social">
-              <h1 class="social__title">Check my out</h1>
-              <div class="social__link" href="#">
-                <img src="./images/github.png" alt="GitHub" class="link__image">
-              </div>
-              <div class="social__link" href="#">
-                <img src="./images/telegram.png" alt="Telegram" class="link__image">
-              </div>
-              <div class="social__link" href="#">
-                <img src="./images/in.png" alt="In" class="link__image">
-              </div>
-            </div>
-          </div>
-          <figure class="about__image">
-            <div class="about__image-box">
-              <img src="./images/john.png" alt="John" class="about__image_john">
-            </div>
-          </figure>
-        </div>
-      </section>
-
-      <section id="skills" class="skills section section--alt">
-        <div class="container"> 
-          <div class="container--alt">
-            <h2 class="about__subtitle--alt">skills</h2>
-            <h1 class="section__title--alt">My Skills</h2>
-            <p class="section__subtitle--alt">I am constantly learning and developing, expanding my professional and social skills.</p>
-          </div>
-          <div class="skills__container">
-            <ul class="skills__tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>VS Code</li>
-              <li>Git</li>
-              <li>DevTools</li>
-              <li>Figma</li>
-              <li>Postman</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Redux Toolkit</li>
-              <li>SQL</li>
-              <li>Webpack</li>
-              <li>Vite</li>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>REST API</li>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li><a href="#about" class="nav__link">About Me</a></li>
+              <li><a href="#skills" class="nav__link">Skills</a></li>
+              <li><a href="#projects" class="nav__link">Projects</a></li>
+              <li><a href="#experience" class="nav__link">Experience</a></li>
             </ul>
-            <ul class="skills__bars">
-              <h1 class="skill__title">Developer Skills</h1>
+          </nav>
 
-              <li class="bar">
-                <span class="bar__label">HTML5</span>
-                <div class="bar__background">
-                  <div class="bar__progress" style="width: 70%"></div>
-                </div>
-              </li>
-
-              <li class="bar">
-                <span class="bar__label">CSS3</span>
-                <div class="bar__background">
-                  <div class="bar__progress" style="width: 55%"></div>
-                </div>
-              </li>
-
-              <li class="bar">
-                <span class="bar__label">JavaScript</span>
-                <div class="bar__background">
-                  <div class="bar__progress" style="width: 40%"></div>
-                </div>
-              </li>
-                
-            </ul>
-          </div>
-        </div> 
-      </section>
-
-      <section id="projects" class="portfolio section">
-        <div class="container">
-          <h2 class="about__subtitle">projects</h2>
-          <h1 class="section__title">My Portfolio</h1>
-          <p class="section__subtitle">My best works during my studies and participation in open web community projects.</p>
-          <ul class="portfolio__grid">
-            <li class="card cool__two">
-              <div class="card__background">
-                <span class="card__category">category</span>
-                <h3 class="card__title">Cool Two-Line Headline</h3>
-                <button class="card__btn">read more</button>
-              </div>
-            </li>
-            <li class="card cool__three">
-              <div class="card__background">
-                <span class="card__category">category</span>
-                <h3 class="card__title">Cool Three-Line Headline</h3>
-                <button class="card__btn">read more</button>
-              </div>
-            </li>
-            <li class="card cool__line">
-              <div class="card__background">
-                <span class="card__category">category</span>
-                <h3 class="card__title">Cool Three-Line Headline</h3>
-                <button class="card__btn">read more</button>
-              </div>
-            </li>
-            <li class="card cool__head">
-              <div class="card__background">
-                <span class="card__category">category</span>
-                <h3 class="card__title">Cool Three-Line Headline</h3>
-                <button class="card__btn">read more</button>
-              </div>
-            </li>
-            <li class="card cool__three-line">
-              <div class="card__background">
-                <span class="card__category">category</span>
-                <h3 class="card__title">Cool Three-Line Headline</h3>
-                <button class="card__btn">read more</button>
-              </div>
-            </li>
-            <li class="card cool__two-line">
-              <div class="card__background">
-                <span class="card__category">category</span>
-                <h3 class="card__title">Cool Two-Line Headline</h3>
-                <button class="card__btn">read more</button>
-              </div>
-            </li>
-          </ul>
+          <button class="btn">contact</button>
         </div>
-      </section>
+      </header>
 
-      <section id="experience" class="experience section section--alt">
-        <div class="container">
-          <div class="container--alt">
-            <h2 class="about__subtitle--alt">experience</h2>
-            <h1 class="section__title--alt">Experience</h1>
-            <p class="section__subtitle--alt">My professional journey in learning and self-development as a beginner web engineer</p>
-          </div>
-          <ul class="experience__grid">
-            <li class="exp-card">
-              <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
-              <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-              <strong class="exp-card__number">2023</strong>
-            </li>
-            <li class="exp-card">
-              <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
-              <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-              <strong class="exp-card__number">2024</strong>
-            </li>
-            <li class="exp-card">
-              <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
-              <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-              <strong class="exp-card__number">2025</strong>
-            </li>
-            <li class="exp-card">
-              <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
-              <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-              <strong class="exp-card__number">2026</strong>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="about__subtitle">contacts</h2>
-            <h1 class="section__title">Contact With Me</h1>
-            <p class="section__subtitle">If you are interested in cooperation, I will be glad to receive your proposals and work on joint projects.</p>
-
-          <div class="contact__body">
-            <div class="contact__box">
-              <div class="contact__item">
-                <h3 class="contact__title">Location</h3>
-                <p class="contact__text">Moscow, Russia</p>
-              </div>
-              <div class="contact__item">
-                <h3 class="contact__title">Email</h3>
-                <p class="contact__text">john@example.com</p>
-              </div>
-              <div class="contact__item">
-                <h3 class="contact__title">Phone</h3>
-                <p class="contact__text">+7 987 123-45-60</p>
+      <main>
+        <section id="about" class="about section">
+          <div class="container about__container">
+            <div class="about__text">
+              <h2 class="about__subtitle">about me</h2>
+              <h1 class="section__title">Hi, <span class="accent">I'm John</span>, a beginner web developer.</h1>
+              <p class="section__subtitle">Since 2025, I have been passionate about web technologies, studying at an IT college and studying all modern trends and directions of development of the web industry.</p>
+              <div class="social">
+                <h1 class="social__title">Check my out</h1>
+                <div class="social__link" href="#">
+                  <img src="./images/github.png" alt="GitHub" class="link__image">
+                </div>
+                <div class="social__link" href="#">
+                  <img src="./images/telegram.png" alt="Telegram" class="link__image">
+                </div>
+                <div class="social__link" href="#">
+                  <img src="./images/in.png" alt="In" class="link__image">
+                </div>
               </div>
             </div>
-
-            <form class="contact__form">
-              <div class="form__row">
-                <div class="form__group">
-                  <label for="name" class="label">You Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="Please introduce yourself"
-                    required
-                    minlength="3"
-                  />
-                  <span class="under__label">Minimum number of characters - 3</span>
-                </div>
-                <div class="form__group">
-                  <label for="email" class="label">Your Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Please enter your email address"
-                    required
-                  />
-                  <span class="under__label">Address format - test@example.com</span>
-                </div>
+            <figure class="about__image">
+              <div class="about__image-box">
+                <img src="./images/john.png" alt="John" class="about__image_john">
               </div>
-
-              <div class="form__group">
-                <label for="message" class="label">Message</label>
-                <textarea
-                  id="message"
-                  placeholder="Please enter your message"
-                  required
-                ></textarea>
-
-              </div>
-              <div class="data">
-                <button type="submit" class="btn btn__sumbit">submit</button>
-                <p class="consent">By clicking the submit button You confirm my consent to the processing of <span class="consent__span">personal data</span></p>
-              </div>
-            </form>
+            </figure>
           </div>
+        </section>
 
+        <section id="skills" class="skills section section--alt">
+          <div class="container"> 
+            <div class="container--alt">
+              <h2 class="about__subtitle--alt">skills</h2>
+              <h1 class="section__title--alt">My Skills</h2>
+              <p class="section__subtitle--alt">I am constantly learning and developing, expanding my professional and social skills.</p>
+            </div>
+            <div class="skills__container">
+              <ul class="skills__tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>VS Code</li>
+                <li>Git</li>
+                <li>DevTools</li>
+                <li>Figma</li>
+                <li>Postman</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Redux Toolkit</li>
+                <li>SQL</li>
+                <li>Webpack</li>
+                <li>Vite</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>REST API</li>
+              </ul>
+              <ul class="skills__bars">
+                <h1 class="skill__title">Developer Skills</h1>
+
+                <li class="bar">
+                  <span class="bar__label">HTML5</span>
+                  <div class="bar__background">
+                    <div class="bar__progress" style="width: 70%"></div>
+                  </div>
+                </li>
+
+                <li class="bar">
+                  <span class="bar__label">CSS3</span>
+                  <div class="bar__background">
+                    <div class="bar__progress" style="width: 55%"></div>
+                  </div>
+                </li>
+
+                <li class="bar">
+                  <span class="bar__label">JavaScript</span>
+                  <div class="bar__background">
+                    <div class="bar__progress" style="width: 40%"></div>
+                  </div>
+                </li>
+                  
+              </ul>
+            </div>
+          </div> 
+        </section>
+
+        <section id="projects" class="portfolio section">
+          <div class="container">
+            <h2 class="about__subtitle">projects</h2>
+            <h1 class="section__title">My Portfolio</h1>
+            <p class="section__subtitle">My best works during my studies and participation in open web community projects.</p>
+            <ul class="portfolio__grid">
+              <li class="card cool__two">
+                <div class="card__background">
+                  <span class="card__category">category</span>
+                  <h3 class="card__title">Cool Two-Line Headline</h3>
+                  <button class="card__btn">read more</button>
+                </div>
+              </li>
+              <li class="card cool__three">
+                <div class="card__background">
+                  <span class="card__category">category</span>
+                  <h3 class="card__title">Cool Three-Line Headline</h3>
+                  <button class="card__btn">read more</button>
+                </div>
+              </li>
+              <li class="card cool__line">
+                <div class="card__background">
+                  <span class="card__category">category</span>
+                  <h3 class="card__title">Cool Three-Line Headline</h3>
+                  <button class="card__btn">read more</button>
+                </div>
+              </li>
+              <li class="card cool__head">
+                <div class="card__background">
+                  <span class="card__category">category</span>
+                  <h3 class="card__title">Cool Three-Line Headline</h3>
+                  <button class="card__btn">read more</button>
+                </div>
+              </li>
+              <li class="card cool__three-line">
+                <div class="card__background">
+                  <span class="card__category">category</span>
+                  <h3 class="card__title">Cool Three-Line Headline</h3>
+                  <button class="card__btn">read more</button>
+                </div>
+              </li>
+              <li class="card cool__two-line">
+                <div class="card__background">
+                  <span class="card__category">category</span>
+                  <h3 class="card__title">Cool Two-Line Headline</h3>
+                  <button class="card__btn">read more</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="experience" class="experience section section--alt">
+          <div class="container">
+            <div class="container--alt">
+              <h2 class="about__subtitle--alt">experience</h2>
+              <h1 class="section__title--alt">Experience</h1>
+              <p class="section__subtitle--alt">My professional journey in learning and self-development as a beginner web engineer</p>
+            </div>
+            <ul class="experience__grid">
+              <li class="exp-card">
+                <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
+                <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <strong class="exp-card__number">2023</strong>
+              </li>
+              <li class="exp-card">
+                <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
+                <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <strong class="exp-card__number">2024</strong>
+              </li>
+              <li class="exp-card">
+                <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
+                <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <strong class="exp-card__number">2025</strong>
+              </li>
+              <li class="exp-card">
+                <h4 class="exp-card__title">SOME EXPERIENCE 1</h4>
+                <p class="exp-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                <strong class="exp-card__number">2026</strong>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="contact" class="contact section">
+          <div class="container">
+              <h2 class="about__subtitle">contacts</h2>
+              <h1 class="section__title">Contact With Me</h1>
+              <p class="section__subtitle">If you are interested in cooperation, I will be glad to receive your proposals and work on joint projects.</p>
+
+            <div class="contact__body">
+              <div class="contact__box">
+                <div class="contact__item">
+                  <h3 class="contact__title">Location</h3>
+                  <p class="contact__text">Moscow, Russia</p>
+                </div>
+                <div class="contact__item">
+                  <h3 class="contact__title">Email</h3>
+                  <p class="contact__text">john@example.com</p>
+                </div>
+                <div class="contact__item">
+                  <h3 class="contact__title">Phone</h3>
+                  <p class="contact__text">+7 987 123-45-60</p>
+                </div>
+              </div>
+
+              <form class="contact__form">
+                <div class="form__row">
+                  <div class="form__group">
+                    <label for="name" class="label">You Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Please introduce yourself"
+                      required
+                      minlength="3"
+                    />
+                    <span class="under__label">Minimum number of characters - 3</span>
+                  </div>
+                  <div class="form__group">
+                    <label for="email" class="label">Your Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Please enter your email address"
+                      required
+                    />
+                    <span class="under__label">Address format - test@example.com</span>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label for="message" class="label">Message</label>
+                  <textarea
+                    id="message"
+                    placeholder="Please enter your message"
+                    required
+                  ></textarea>
+
+                </div>
+                <div class="data">
+                  <button type="submit" class="btn btn__sumbit">submit</button>
+                  <p class="consent">By clicking the submit button You confirm my consent to the processing of <span class="consent__span">personal data</span></p>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__container">
+          <nav class="footer__nav">
+            <a href="#about" class="footer__link">About Me</a>
+            <a href="#skills" class="footer__link">Skills</a>
+            <a href="#projects" class="footer__link">Projects</a>
+            <a href="#experience" class="footer__link">Experience</a>
+          </nav>
+          <div class="footer__bottom">
+            <h1 class="footer__title">2025–2026 it hexlet</h1>
+            <p class="footer__text">This project is a practical project for mastering the structure and style of a web page.</p>
+          </div>
+          <a href="#" class="back-to-top">back to top</a>
         </div>
-      </section>
-
-    </main>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
