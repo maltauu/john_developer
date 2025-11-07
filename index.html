@@ -195,6 +195,72 @@
         </div>
       </section>
 
+      <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="about__subtitle">contacts</h2>
+            <h1 class="section__title">Contact With Me</h1>
+            <p class="section__subtitle">If you are interested in cooperation, I will be glad to receive your proposals and work on joint projects.</p>
+
+          <div class="contact__body">
+            <div class="contact__box">
+              <div class="contact__item">
+                <h3 class="contact__title">Location</h3>
+                <p class="contact__text">Moscow, Russia</p>
+              </div>
+              <div class="contact__item">
+                <h3 class="contact__title">Email</h3>
+                <p class="contact__text">john@example.com</p>
+              </div>
+              <div class="contact__item">
+                <h3 class="contact__title">Phone</h3>
+                <p class="contact__text">+7 987 123-45-60</p>
+              </div>
+            </div>
+
+            <form class="contact__form">
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="name" class="label">You Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Please introduce yourself"
+                    required
+                    minlength="3"
+                  />
+                  <span class="under__label">Minimum number of characters - 3</span>
+                </div>
+                <div class="form__group">
+                  <label for="email" class="label">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Please enter your email address"
+                    required
+                  />
+                  <span class="under__label">Address format - test@example.com</span>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="label">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Please enter your message"
+                  required
+                ></textarea>
+
+              </div>
+              <div class="data">
+                <button type="submit" class="btn btn__sumbit">submit</button>
+                <p class="consent">By clicking the submit button You confirm my consent to the processing of <span class="consent__span">personal data</span></p>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   </div>
 </body>
