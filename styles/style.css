@@ -3,9 +3,11 @@
   --color-text: rgba(27, 27, 27, 1);
   --color-accent: #1664EA;
   --color-alt: #f6d363;
+  --color-card-bg: rgba(27, 27, 27, 1);
   --color-about-subtitle: rgba(27, 27, 27, 0.25);
   --color-link-bg: rgba(232, 232, 232, 1);
   --border-link: 1px solid rgba(232, 232, 232, 1);
+  --progress-bar-bg: rgba(27, 27, 27, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,9 +16,11 @@
     --color-text: rgba(225, 225, 225, 1);
     --color-accent: #1664EA;
     --color-alt: rgba(37, 37, 37, 1);
+    --color-card-bg: rgba(48, 48, 48, 1);
     --color-about-subtitle: rgba(255, 255, 255, 0.25);
     --color-link-bg: rgba(22, 100, 234, 1);
     --border-link: none;
+    --progress-bar-bg: rgba(22, 100, 234, 1);
   }
 }
 
@@ -44,9 +48,11 @@ body {
   --color-text: rgba(27, 27, 27, 1);
   --color-accent: #1664EA;
   --color-alt: #f6d363;
+  --color-card-bg: rgba(27, 27, 27, 1);
   --color-about-subtitle: rgba(27, 27, 27, 0.25);
   --color-link-bg: rgba(232, 232, 232, 1);
   --border-link: 1px solid rgba(232, 232, 232, 1);
+  --progress-bar-bg: rgba(27, 27, 27, 1);
 }
 
 .theme-checkbox {
@@ -95,6 +101,8 @@ body {
   font-size: 20px;
   color: var(--color-text);
   font-weight: 400;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .btn {
@@ -122,12 +130,52 @@ body {
   background: var(--color-alt);
 }
 
-.section__title {
+.about__subtitle {
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.3cap;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-about-subtitle);
+}
+
+.about__subtitle--alt {
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.3cap;
+  font-weight: 400;
+  text-transform: uppercase;
   text-align: center;
+  color: var(--color-about-subtitle);
+  margin: 20px;
+}
+
+.section__title {
+  color: var(--color-text);
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.section__title--alt {
+  text-align: center;
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 20px;
 }
 
 .section__subtitle {
-  color: #666;
+  color: var(--color-text);
+}
+
+.section__subtitle--alt {
+  color: var(--color-text);
+  text-align: center;
+  max-width: 430px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 .accent {
@@ -144,19 +192,6 @@ body {
 .about__text {
   color: var(--color-text);
   max-width: 500px;
-}
-
-.about__title {
-  font-size: 40px;
-  line-height: 120%;
-}
-
-.about__subtitle {
-  font-size: 14px;
-  line-height: 140%;
-  letter-spacing: 30%;
-  font-weight: 400;
-  color: var(--color-about-subtitle);
 }
 
 .social {
@@ -188,6 +223,7 @@ body {
 .link__image {
   width: 60%;
   height: 60%;
+  -webkit-user-drag: none;
 }
 
 .about__image {
@@ -224,4 +260,81 @@ body {
   height: 120%; /* костыль */
   object-fit: cover;
   transform: rotate(-10deg) translate(-8%, -8%); /* костыль */
+}
+
+.about__desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.skills__container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills__container--alt {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0 46.5px 0 0;
+  max-width: 307px;
+  justify-self: end;
+}
+
+.skills__tags li {
+  background: var(--color-card-bg);
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.skills__bars {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  color: var(--color-text);
+}
+
+.skill__title {
+  margin: 0 0 40px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.bar {
+  margin: 20px 0;
+}
+
+.bar__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.bar__background {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: rgba(225, 225, 225, 1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar__progress {
+  height: 100%;
+  background: var(--progress-bar-bg);
+  border-radius: 4px;
+  transition: width 0.4s ease;
 }
