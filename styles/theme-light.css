@@ -1,0 +1,22 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: rgba(27, 27, 27, 1);
+  --color-accent: #1664EA;
+  --color-alt: #f6d363;
+  --color-dev-bg: rgba(27, 27, 27, 1);
+  --color-about-subtitle: rgba(27, 27, 27, 0.25);
+  --color-link-bg: rgba(232, 232, 232, 1);
+  --color-link-bg--alt: rgba(22, 100, 234, 1);
+  --border-link: 1px solid rgba(232, 232, 232, 1);
+  --progress-bar-bg: rgba(27, 27, 27, 1);
+  --color-card-bg: rgba(27, 27, 27, 1);
+  --border-card: none;
+  --border-exp-card: 1px solid rgba(27, 27, 27, 0.25);
+  --color-text-exp: rgba(27, 27, 27, 1);
+  --input-border: 2px solid rgba(27, 27, 27, 0.25);
+  --color-text-input: black;
+  --color-back-to-top: rgba(255, 218, 116, 1);
+  --color-back-to-top--alt: rgba(22, 100, 234, 1);
+  --btn-bg: black;
+  --btn-color: white;
+}

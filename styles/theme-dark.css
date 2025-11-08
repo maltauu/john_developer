@@ -1,0 +1,22 @@
+:root {
+  --color-bg: rgba(48, 48, 48, 1);
+  --color-text: rgba(225, 225, 225, 1);
+  --color-accent: #1664EA;
+  --color-alt: rgba(37, 37, 37, 1);
+  --color-dev-bg: rgba(48, 48, 48, 1);
+  --color-about-subtitle: rgba(255, 255, 255, 0.25);
+  --color-link-bg: rgba(22, 100, 234, 1);
+  --color-link-bg--alt: rgba(232, 232, 232, 1);
+  --border-link: none;
+  --progress-bar-bg: rgba(22, 100, 234, 1);
+  --color-card-bg: rgba(225, 225, 225, 1);
+  --border-card: 1px solid rgba(232, 232, 232, 1);
+  --border-exp-card: 1px solid rgba(255, 255, 255, 0.25);
+  --color-text-exp: rgba(22, 100, 234, 1);
+  --input-border: 2px solid rgba(255, 255, 255, 0.25);
+  --color-text-input: white;
+  --color-back-to-top: rgba(22, 100, 234, 1);
+  --color-back-to-top--alt: rgba(255, 218, 116, 1);
+  --btn-bg: white;
+  --btn-color: black;
+}
